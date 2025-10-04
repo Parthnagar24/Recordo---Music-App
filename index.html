@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recordo - Your Favourite Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify" /> Recordo</li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <h1>Best of NCS & Bollywood Classics</h1>
+        <div class="songItemContainer" id="songList">
+          <!-- Songs will be injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <input type="range" id="myProgressBar" min="0" max="100" value="0" />
+      <div class="icons">
+        <button id="previous">
+          <i class="fas fa-step-backward fa-2x"></i>
+        </button>
+        <button id="masterPlay">
+          <i class="fas fa-play-circle fa-3x"></i>
+        </button>
+        <button id="next"><i class="fas fa-step-forward fa-2x"></i></button>
+      </div>
+      <div class="songInfo">
+        <img src="playing.gif" width="42" id="gif" style="opacity: 0" />
+        <span id="masterSongName">Select a song to play</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
